@@ -2,14 +2,21 @@
 
 The following are the build commands used to demonstrate debugging with GDB and DDD
 
-## generate executable with debugger information and all warnings included (manual compilation)
-`g++ -Wall -g -o main main.cpp`
-`g++ -Wall -g -o main2 main2.cpp`
-`g++ -Wall -g -o main3 main3.cpp`
-`g++ -Wall -g -o main4 main4.cpp`
+## generate executable with debugger information and all warnings included (manual G++ compilation)
 
+This method allows us to add warnings and debugging information for each program we want to compile.
+
+```
+g++ -Wall -g -o main main.cpp
+g++ -Wall -g -o main2 main2.cpp
+g++ -Wall -g -o main3 main3.cpp
+g++ -Wall -g -o main4 main4.cpp
+```
 
 ## generate executable with debugger information and all warnings included (CMake compilation)
+
+An alternative to manually compiling with g++ for each file is to use CMake.  The commands below will setup an "out of source" build directory where we can generate all the executables in a separate directory.  Note that this 'build' directory should never be included in the Git repository.  In fact, the entire directory can be deleted and regenerated without losing any source code.
+
 ```
 mkdir build
 cd build
