@@ -1,9 +1,12 @@
-# Classroom examples from Lecture 04
+# Classroom examples from Lectures 04 & 05
 
 The following are the build commands used to demonstrate debugging with GDB and DDD
 
 ## generate executable with debugger information and all warnings included (manual compilation)
 `g++ -Wall -g -o main main.cpp`
+`g++ -Wall -g -o main2 main2.cpp`
+`g++ -Wall -g -o main3 main3.cpp`
+`g++ -Wall -g -o main4 main4.cpp`
 
 
 ## generate executable with debugger information and all warnings included (CMake compilation)

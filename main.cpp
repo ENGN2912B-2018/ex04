@@ -1,10 +1,4 @@
-#include <cstdlib>      // provides atof()
-#include <iostream>     // provides cout, cin, precision, fixed, scientific
-#include <string>       // provides 'string()'
-
-/*
- *
- */
+#include <iostream>
 
 using namespace std;
 
@@ -15,7 +9,7 @@ int main(int nargc, char* argv[])
 	
 	const unsigned int N {10};
 
-	for (int n=0; n < N; n++){
+	for (unsigned int n=0; n < N; n++){
 		cout << n << endl;
 	}
 
